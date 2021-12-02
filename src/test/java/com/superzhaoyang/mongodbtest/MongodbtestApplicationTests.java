@@ -111,7 +111,7 @@ class MongodbtestApplicationTests {
     @Test
     public void delete() {
         Query query =
-                new Query(Criteria.where("_id").is("61a8cda37de7532becdf9a16"));
+                new Query(Criteria.where("_id").is("61a8d7d556802b4e6ebe1561"));
         DeleteResult result = mongoTemplate.remove(query, User.class);
         long count = result.getDeletedCount();
         System.out.println(count);
